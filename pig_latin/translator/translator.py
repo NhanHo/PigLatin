@@ -24,6 +24,8 @@ def translate_word(s):
 
 
 def translate_paragraph(paragraph):
+    # We expect the paragraph to be ascii only, error handling is
+    # handled from the caller of this function
     current_word = ""
     result = ""
     paragraph += " "
