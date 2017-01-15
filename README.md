@@ -9,6 +9,7 @@ flask run
 ```
 
 - The microservice will be running at `localhost:5000`
+
 ```curl -XPOST -H "Content-Type: text/plain" --data "glove happy" localhost:5000```
 
 # Implementation Note
