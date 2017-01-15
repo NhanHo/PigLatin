@@ -3,14 +3,17 @@
 - Python 3.x
 
 ```
+cd dir/to/project
 pip install -r requirements.txt
 export FLASK_APP=pig_latin/pig_latin.py
+python3 -m unittest discover
 flask run
 ```
 
 - The microservice will be running at `localhost:5000`
 
 ```curl -XPOST -H "Content-Type: text/plain" --data "glove happy" localhost:5000```
+
 
 # Implementation Note
 - The endpoint is at root "/"
